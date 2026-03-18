@@ -35,12 +35,13 @@ public class TripService {
         tripRepository.deleteById(id);
     }
 
-    public void updateDates(LocalDate newStartDate, LocalDate newReturnDate, Integer id){
-        getTripById(id).ifPresent(t -> {t.setStartDate(newStartDate);
+    public Trip updateDates(Integer id, LocalDate newStartDate, LocalDate newReturnDate){
+        return getTripById(id).map(t -> {t.setStartDate(newStartDate);
             t.setReturnDate(newReturnDate);
-            tripRepository.save(t);
+            return tripRepository.save(t);
 
-        });
+        })
+        .orElseThrow(()-> new RuntimeException("Trip not found"));
     }
 }
 

@@ -49,14 +49,14 @@ public class Trip{
     a whole new trip with the exact same details just to give it new dates, its stand alone and are not
     influencing/conflicting other features in the app
      */
-    public LocalDate setStartDate(LocalDate newStartDate){
+    public void setStartDate(LocalDate newStartDate){
         this.startDate = newStartDate;
-        return newStartDate;
+
     }
 
-    public LocalDate setReturnDate(LocalDate newReturnDate){
+    public void setReturnDate(LocalDate newReturnDate){
         this.returnDate = newReturnDate;
-        return newReturnDate;
+
     }
 
     /*No setters for city or country as it will create conflict with
