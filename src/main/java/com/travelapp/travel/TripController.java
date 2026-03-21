@@ -49,7 +49,7 @@ public class TripController {
     @PutMapping("/trips/{id}")
     public ResponseEntity<Trip> updateDates(@PathVariable Integer id, @RequestBody UpdateDatesRequest request){
 
-        return ResponseEntity.ok(tripService.updateDates(id, request.getNewStartDate(), request.getNewReturnDate()));
+        return ResponseEntity.ok(tripService.updateDates(id, request.getStartDate(), request.getReturnDate()));
     }
 
 

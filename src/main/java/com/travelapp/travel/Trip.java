@@ -27,6 +27,7 @@ public class Trip{
         this.startDate = startDate;
         this.returnDate = returnDate;
 
+
     }
 
     //Getters
@@ -36,6 +37,10 @@ public class Trip{
 
     public String getCountryName(){
         return countryName;
+    }
+
+    public Integer getId(){
+        return id;
     }
 
     public LocalDate getStartDate(){return startDate;}

@@ -1,0 +1,25 @@
+POST http://localhost:8080/trips
+Content-Type: application/json
+
+{
+  "cityName": "Bangkok",
+  "countryName": "Thailand",
+  "startDate": "2026-10-08",
+  "returnDate": "2026-11-09"
+
+}
+
+###
+GET http://localhost:8080/trips/1
+
+###
+PUT http://localhost:8080/trips/1
+Content-Type: application/json
+
+{
+  "startDate": "2026-12-04",
+  "returnDate": "2026-12-28"
+}
+
+###
+DELETE http://localhost:8080/trips/1

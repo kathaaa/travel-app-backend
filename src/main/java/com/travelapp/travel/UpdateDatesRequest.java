@@ -8,16 +8,18 @@ public class UpdateDatesRequest {
     private LocalDate startDate;
     private LocalDate returnDate;
 
+    public UpdateDatesRequest(){}
+
     public UpdateDatesRequest(LocalDate startDate, LocalDate returnDate){
         this.startDate = startDate;
         this.returnDate = returnDate;
     }
 
-    public LocalDate getNewStartDate(){
+    public LocalDate getStartDate(){
         return startDate;
     }
 
-    public LocalDate getNewReturnDate(){
+    public LocalDate getReturnDate(){
         return returnDate;
     }
 
