@@ -12,14 +12,30 @@ Content-Type: application/json
 ###
 GET http://localhost:8080/trips/1
 
+
 ###
-PUT http://localhost:8080/trips/1
+POST http://localhost:8080/trips/1/packingitems
 Content-Type: application/json
 
 {
-  "startDate": "2026-12-04",
-  "returnDate": "2026-12-28"
+  "name": "Passport"
 }
 
 ###
-DELETE http://localhost:8080/trips/1
+GET http://localhost:8080/trips/1/packingitems
+
+###
+
+PUT http://localhost:8080/packingitems/2
+Content-Type: application/json
+
+{
+  "name": "charger"
+}
+
+###
+DELETE http://localhost:8080/packingitems/2
+
+
+
+
