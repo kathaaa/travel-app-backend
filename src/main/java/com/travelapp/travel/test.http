@@ -26,15 +26,20 @@ GET http://localhost:8080/trips/1/packingitems
 
 ###
 
-PUT http://localhost:8080/packingitems/2
+POST http://localhost:8080/trips/1/markers
 Content-Type: application/json
 
 {
-  "name": "charger"
+  "latitude": 13.7563,
+  "longitude": 100.5018,
+  "name": "Bangkok Center",
+  "notes": "Main area",
+  "hotelInfo": "Hotel Sukhumvit",
+  "transportation": "Taxi from airport"
 }
 
 ###
-DELETE http://localhost:8080/packingitems/2
+
 
 
 
