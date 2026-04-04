@@ -12,33 +12,58 @@ Content-Type: application/json
 ###
 GET http://localhost:8080/trips/1
 
-
 ###
-POST http://localhost:8080/trips/1/packingitems
+
+POST http://localhost:8080/trips/1/flights
 Content-Type: application/json
 
 {
-  "name": "Passport"
+
+  "flightNumber": "PG1072",
+  "arrivalTime": "2026-04-12T17:10:00",
+  "departureTime": "2026-04-12T13:10:00",
+  "boardingTime": "2026-04-12T12:45:00",
+  "date": "2026-04-12",
+  "destination": "Turkiye",
+  "origin": "Denmark",
+  "passengerName": "Katharina A",
+  "seat": "21A",
+  "gate": "N/A",
+  "terminal": "Terminal 2",
+  "fastTrack": false,
+  "boardingPassScan": "N/A"
 }
 
 ###
-GET http://localhost:8080/trips/1/packingitems
+
+GET http://localhost:8080/trips/1/flights
 
 ###
 
-POST http://localhost:8080/trips/1/markers
+PUT http://localhost:8080/flights/1
 Content-Type: application/json
 
 {
-  "latitude": 13.7563,
-  "longitude": 100.5018,
-  "name": "Bangkok Center",
-  "notes": "Main area",
-  "hotelInfo": "Hotel Sukhumvit",
-  "transportation": "Taxi from airport"
+  "flightNumber": "PG1072",
+  "arrivalTime": "2026-04-12T17:10:00",
+  "departureTime": "2026-04-12T13:10:00",
+  "boardingTime": "2026-04-12T12:45:00",
+  "date": "2026-04-12",
+  "destination": "Turkiye",
+  "origin": "Denmark",
+  "passengerName": "Katharina A",
+  "seat": "21F",
+  "gate": "N/A",
+  "terminal": "Terminal 3",
+  "fastTrack": false,
+  "boardingPassScan": "N/A"
 }
 
 ###
+
+DELETE http://localhost:8080/flights/1
+
+
 
 
 
