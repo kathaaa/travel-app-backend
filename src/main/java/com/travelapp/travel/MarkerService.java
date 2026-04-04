@@ -26,8 +26,8 @@ public class MarkerService {
         return markerRepository.save(marker);
     }
 
-    public Optional<Marker> getMarkerById(Integer id){
-        return markerRepository.findById(id);
+    public Marker getMarkerById(Integer id){
+        return markerRepository.findById(id).orElseThrow(()-> new RuntimeException("Marker not found"));
     }
 
     public void deleteMarker(Integer id){

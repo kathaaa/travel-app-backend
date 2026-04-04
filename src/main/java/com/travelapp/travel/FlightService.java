@@ -24,8 +24,8 @@ public class FlightService {
         return flightRepository.save(flight);
     }
 
-    public Optional<Flight> getFlightById(Integer id){
-        return flightRepository.findById(id);
+    public Flight getFlightById(Integer id){
+        return flightRepository.findById(id).orElseThrow(()-> new RuntimeException("Flight not found"));
     }
 
     public void deleteFlight(Integer id){

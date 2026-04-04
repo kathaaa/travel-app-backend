@@ -14,58 +14,34 @@ GET http://localhost:8080/trips/1
 
 ###
 
-POST http://localhost:8080/trips/1/flights
+POST http://localhost:8080/users
 Content-Type: application/json
 
 {
-
-  "flightNumber": "PG1072",
-  "arrivalTime": "2026-04-12T17:10:00",
-  "departureTime": "2026-04-12T13:10:00",
-  "boardingTime": "2026-04-12T12:45:00",
-  "date": "2026-04-12",
-  "destination": "Turkiye",
-  "origin": "Denmark",
-  "passengerName": "Katharina A",
-  "seat": "21A",
-  "gate": "N/A",
-  "terminal": "Terminal 2",
-  "fastTrack": false,
-  "boardingPassScan": "N/A"
+  "name": "Katharina",
+  "email": "kath4393@gmail.com",
+  "password": "Duddi2402",
+  "profilePhoto": "N/A"
 }
 
-###
-
-GET http://localhost:8080/trips/1/flights
 
 ###
 
-PUT http://localhost:8080/flights/1
+GET http://localhost:8080/users/1
+
+###
+
+PUT http://localhost:8080/users/1
 Content-Type: application/json
 
 {
-  "flightNumber": "PG1072",
-  "arrivalTime": "2026-04-12T17:10:00",
-  "departureTime": "2026-04-12T13:10:00",
-  "boardingTime": "2026-04-12T12:45:00",
-  "date": "2026-04-12",
-  "destination": "Turkiye",
-  "origin": "Denmark",
-  "passengerName": "Katharina A",
-  "seat": "21F",
-  "gate": "N/A",
-  "terminal": "Terminal 3",
-  "fastTrack": false,
-  "boardingPassScan": "N/A"
+  "name": "Katha",
+  "email": "kath4393@gmail.com",
+  "password": "Duddi240285",
+  "profilePhoto": "N/A"
 }
 
 ###
-
-DELETE http://localhost:8080/flights/1
-
-
-
-
 
 
 

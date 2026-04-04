@@ -19,6 +19,9 @@ public class Trip{
     @Column(nullable = true)
     private LocalDate returnDate;
 
+    @ManyToOne
+    private User user;
+
 
     public Trip(){}
     public Trip(String cityName, String countryName, LocalDate startDate, LocalDate returnDate){
