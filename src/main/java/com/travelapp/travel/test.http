@@ -43,5 +43,15 @@ Content-Type: application/json
 
 ###
 
+GET http://localhost:8080/weather?city=Bangkok
+
+
+###
+
+GET http://localhost:8080/currency?currency=USD
+
+###
+
+
 
 

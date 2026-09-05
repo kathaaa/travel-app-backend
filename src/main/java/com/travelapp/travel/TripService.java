@@ -41,7 +41,7 @@ public class TripService {
             return tripRepository.save(t);
 
         })
-        .orElseThrow(()-> new RuntimeException("Trip not found"));
+        .orElseThrow(()-> new ResourceNotFoundException("Trip not found"));
     }
 }
 

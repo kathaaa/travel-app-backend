@@ -43,7 +43,7 @@ public class MarkerService {
             if(newTransportation != null) m.setTransportation(newTransportation);
             return markerRepository.save(m);
         })
-                .orElseThrow(()-> new RuntimeException("Marker not found"));
+                .orElseThrow(()-> new ResourceNotFoundException("Marker not found"));
     }
 
 

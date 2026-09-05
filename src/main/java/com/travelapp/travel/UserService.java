@@ -44,7 +44,7 @@ public class UserService {
             if(newProfilePhoto != null) u.setProfilePhoto(newProfilePhoto);
             return userRepository.save(u);
         })
-                .orElseThrow(()-> new RuntimeException("User not found"));
+                .orElseThrow(()-> new ResourceNotFoundException("User not found"));
 
     }
 }

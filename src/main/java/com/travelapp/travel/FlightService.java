@@ -42,7 +42,7 @@ public class FlightService {
             if(newSeat != null) f.setSeat(newSeat);
             return flightRepository.save(f);
         })
-                .orElseThrow(()-> new RuntimeException("flight not found"));
+                .orElseThrow(()-> new ResourceNotFoundException("flight not found"));
 
     }
 

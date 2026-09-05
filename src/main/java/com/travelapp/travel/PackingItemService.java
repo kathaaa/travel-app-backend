@@ -35,7 +35,7 @@ public class PackingItemService {
             return packingItemRepository.save(i);
 
         })
-                .orElseThrow(()-> new RuntimeException("Packing item not found"));
+                .orElseThrow(()-> new ResourceNotFoundException("Packing item not found"));
     }
 
 
